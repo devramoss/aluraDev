@@ -1,0 +1,50 @@
+:root{
+    --white : #FFFFFF;
+    --inter: 'Inter', sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #051D3B;
+}
+header{
+ 
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 32px;
+    margin-top: 32px;
+}
+.logo{
+    width: 145px;
+}
+#campo_de_busca{
+    width: 752px;
+    height: 56px;
+    border: none;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.16);
+    font-family: var(--inter);
+    font-size: 16px;
+    padding-left: 14px;
+}
+.autor{
+    display: flex;
+    align-items: center;
+    width: 106px;
+    height: 56px;
+    color: var(--white);
+    font-family: var(--inter);
+    padding: 12px;
+    margin: 32px;
+}
+#foto_autor{
+    width: 32px;
+    height: 32px;
+    margin-right: 8px;
+    border-radius: 50%;
+}
