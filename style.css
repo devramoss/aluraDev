@@ -1,6 +1,8 @@
 :root{
     --white : #FFFFFF;
     --inter: 'Inter', sans-serif;
+    --letterSpacing : 0.4em;
+    --transparentColor: rgba(255, 255, 255, 0.16);
 }
 
 *{
@@ -31,6 +33,7 @@ header{
     border: none;
     border-radius: 8px;
     background-color: rgba(255, 255, 255, 0.16);
+    color: var(--white);
     font-family: var(--inter);
     font-size: 16px;
     padding-left: 14px;
@@ -86,4 +89,29 @@ nav p {
 }
 .menu_link_ativo img {
     background-color: rgba(80, 129, 251, 0.16);
+}
+.section_title{
+    margin-bottom: 16px;
+    font-size: 12px;
+    line-height: 18px;
+    font-family: var(--inter);
+    letter-spacing: var(--letterSpacing);
+    color: var(--white);
+}
+#seu_projeto{
+    display: flex;
+    flex-direction: column;
+    color: var(--white);
+    opacity: 0.64;
+}
+#nome_do_projeto{
+    width: 272px;
+    height: 56px;
+    border-radius: 8px;
+    border-style: none;
+    padding-left: 14px;
+    background-color: var(--transparentColor);
+    color: var(--white);
+    font-size: 16px;
+    font-family: var(--inter);
 }
