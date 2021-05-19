@@ -2,22 +2,25 @@
     --white : #FFFFFF;
     --inter: 'Inter', sans-serif;
 }
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 body{
     background-color: #051D3B;
+    margin-left: 32px;
+    margin-right: 32px;
+    margin: 32px 32px 0;
 }
+
 header{
- 
     height: 56px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-left: 32px;
-    margin-top: 32px;
 }
 .logo{
     width: 145px;
@@ -47,4 +50,40 @@ header{
     height: 32px;
     margin-right: 8px;
     border-radius: 50%;
+}
+nav p {
+    font-size: 16px;
+    letter-spacing: 0.4em;
+    line-height: 18px;
+    color: var(--white);
+    margin-top: 57.3px;
+}
+.menu{
+    width: 189px;
+    height: 146px;
+    font-family: var(--inter);
+    color: var(--white);
+    list-style-type: none;
+}
+.menu_link{
+    display: flex;
+    align-items: center;
+    margin: 32px  0;
+}
+.menu_link img{
+    padding: 17px 14px;
+    width: 48px;
+    background-color:#5081FB;
+    border-radius: 16px;
+}
+.menu_link a{
+    color: var(--white);
+    text-decoration: none;
+    margin-left: 16px;
+}
+.menu_link_ativo a{
+    opacity: 0.56;
+}
+.menu_link_ativo img {
+    background-color: rgba(80, 129, 251, 0.16);
 }
