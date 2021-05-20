@@ -102,16 +102,25 @@ nav p {
     display: flex;
     flex-direction: column;
     color: var(--white);
-    opacity: 0.64;
+
 }
-#nome_do_projeto{
+.projeto_campos{
     width: 272px;
-    height: 56px;
     border-radius: 8px;
     border-style: none;
     padding-left: 14px;
     background-color: var(--transparentColor);
     color: var(--white);
+    opacity: 0.64;
     font-size: 16px;
     font-family: var(--inter);
+}
+#nome_do_projeto{
+    height: 56px;
+    margin-bottom: 16px;
+}
+
+#descricao_do_projeto{
+    height: 80px;
+    padding-bottom: 1.5rem; 
 }
