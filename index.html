@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang = "pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,44 +8,67 @@
     <link rel="stylesheet" href="./style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <img src="./images/logo.png" alt="Logo Alura Dev" class="logo">
+        <img src="./images/logo.png" alt="Logo Alura Dev" id = "logo">
         <form action="">
             <input type="text"id="campo_de_busca" placeholder="Busque por algo">
         </form>
-        <div class="autor">
+        
+        <div id = "autor">
             <img src="./images/autor.jpeg" alt="Foto do autor" id="foto_autor">
             <p>Emilly</p>
         </div>
     </header>
-    <nav>
-        <p>MENU</p>
-        <ul class = "menu">
-            <li class="menu_link">
-                <img src="./images/icon_code.svg" alt="Ícone de código">
-                <a href="#">Editor de código</a>
-            </li>
-            <li class="menu_link menu_link_ativo" >
-                <img src="./images/icon_users.svg" alt="Ícone da comunidade">
-                <a href="#">Comunidade</a>
-            </li>
-        </ul>
-    </nav>
-        <form action="" id="seu_projeto">
-            <label class="section_title">SEU PROJETO</label>
-            <input type="text" id="nome_do_projeto" class = "projeto_campos" placeholder="Nome do seu projeto">
-            <input type="text" id="descricao_do_projeto" class = "projeto_campos" placeholder="Descrição do seu projeto">
-        </form>
 
-        <form action="" id="personalizacao">
-            <label class="section_title">PERSONALIZAÇÃO</label>
-            <select id="lista_de_linguagens">
-                <option value="javaScript">JavaScript</option>
-                <option value="html">HTML</option>
-                <option value="css">CSS</option>
-            </select>
-        </form>
+    <div id = "container">
+            <nav>
+                <p>MENU</p>
+                <ul class = "menu">
+                    <li class = "menu_link">
+                        <img src="./images/icon_code.svg" alt="Ícone de código">
+                        <a href="#">Editor de código</a>
+                    </li>
+                    <li class = "menu_link menu_link_inativo" >
+                        <img src="./images/icon_users.svg" alt="Ícone da comunidade">
+                        <a href="#">Comunidade</a>
+                    </li>
+                </ul>
+            </nav>
+   
+            <main>
+                <form action="" id="editor_de_codigo" >
+                        <div id="bolinhasEditor">
+                           <img src = "./images/bolinha_vermelha.svg" alt = "Bolinha vermelha">
+                           <img src = "./images/bolinha_laranja.svg" alt = "Bolinha laranja">
+                           <img src = "./images/bolinha_verde.svg" alt = "Bolinha verde">
+                        </div>
+                        <textarea cols="30" rows="10"></textarea>
+                </form>
+                <button id="highlightButton">Visualizar com o highlight</button>
+            </main>
+      
+            <section id = "caracteristicasProjeto">
+                    <form action="" id = "sobreProjeto">
+                        <label class ="section_title">SEU PROJETO</label>
+                        <input type = "text" id = "nome_do_projeto" class = "projeto_campos" placeholder="Nome do seu projeto">
+                        <input type = "text" id = "descricao_do_projeto" class = "projeto_campos" placeholder="Descrição do seu projeto">
+                    </form>
+
+                    <form action="" id = "personalizacao">
+                        <label class = "section_title">PERSONALIZAÇÃO</label>
+                        <select id = "lista_de_linguagens" class = "projeto_campos">
+                            <option value = "javaScript">JavaScript</option>
+                            <option value = "html">HTML</option>
+                            <option value = "css">CSS</option>
+                        </select>
+                        <input type = "color" class = "cor_do_editor">
+                        <input type = "button" value = "Salvar projeto" id="saveButton" class="projeto_campos">
+                    </form>
+            </section>
+        </div>
 </body>
 </html>
