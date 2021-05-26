@@ -1,0 +1,433 @@
+:root{
+    --white : #FFFFFF;
+    --inter: 'Inter', sans-serif;
+    --letterSpacing : 0.4em;
+    --transparentColor: rgba(255, 255, 255, 0.16);
+    --borderRadius: 0.8rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: #051D3B;
+    margin-top: 3.2rem;
+    font-size: 1.6rem;
+}
+
+header{
+    height: 5.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#logo{
+    width: 14.5rem;
+    margin: 2rem;
+}
+
+input[type = "text"], #lista_de_linguagens{
+    background-color: var(--transparentColor);
+    border-radius: var(--borderRadius);
+    color: var(--white);
+    font-family: var(--inter);
+    font-size: 1.6rem;
+    border: none;
+    padding-left: 1.4rem;
+}
+
+#campo_de_busca{
+    width: 75.2rem;
+    height: 5.6rem;
+    margin-right: 7rem;
+}
+
+#autor{
+    display: flex;
+    align-items: center;
+    width: 10.6rem;
+    height: 5.6rem;
+    color: var(--white);
+    font-family: var(--inter);
+    padding: 1.2rem;
+    margin-right: 3.2rem;
+}
+
+#foto_autor{
+    width: 3.2rem;
+    height: 3.2rem;
+    margin-right: 0.8rem;
+    border-radius: 50%;
+}
+
+nav p {
+    
+    letter-spacing: 0.4em;
+    line-height: 1.8rem;
+    color: var(--white);
+    margin-top: 5.5rem;
+}
+
+.menu {
+    width: 18.9rem;
+    height: 14.6rem;
+    font-family: var(--inter);
+    color: var(--white);
+    list-style-type: none;
+}
+.menu_link {
+    display: flex;
+    align-items: center;
+    margin: 3.2rem  0;
+}
+
+.menu_link img{
+    padding: 1.7rem 1.4rem;
+    width: 4.8rem;
+    background-color:#5081FB;
+    border-radius: 16px;
+}
+
+.menu_link a{
+    color: var(--white);
+    text-decoration: none;
+    margin-left: 1.6rem;
+}
+
+.menu_link_inativo a{
+    opacity: 0.56;
+}
+
+.menu_link_inativo img {
+    background-color: rgba(80, 129, 251, 0.16);
+}
+
+.section_title {
+    margin-bottom: 1.6rem;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    font-family: var(--inter);
+    letter-spacing: var(--letterSpacing);
+    color: var(--white);
+}
+
+#container {
+    display: flex;
+    margin-left: 3rem;
+}
+#sobreProjeto, #personalizacao {
+    display: flex;
+    flex-direction: column;
+    color: var(--white);
+}
+
+.projeto_campos {
+    width: 27.2rem;
+    height: 5.6rem;
+    border-radius: 0.8rem;
+    border-style: none;
+    padding-left: 1.4rem;
+    margin-bottom: 1.6rem;
+    background-color: var(--transparentColor);
+    color: var(--white);
+    opacity: 0.64;
+    font-size: 1.6rem;
+    font-family: var(--inter);
+}
+
+#descricao_do_projeto{
+    height: 8rem;
+    padding-bottom: 1.5rem;
+    margin-bottom: 4rem; 
+}
+
+option {
+    color: black;
+}
+
+#lista_de_linguagens {
+    appearance: none;
+    background: url(./images/arrow.svg) no-repeat 91.54% 45.98%;
+    background-color: var(--transparentColor);
+}
+.cor_do_editor {
+    width: 27.2rem;
+    height: 5.6rem;
+    border: 1px solid var(--white);
+    border-radius: var(--borderRadius);
+    padding: 0.8rem;
+    background-color:#C4C4C403;
+}
+
+#saveButton{
+    color: black;
+    background-color: #5081FB;
+    margin-top: 3.2rem;
+}
+
+main {
+    width: 75.2rem;
+    height: 36.6rem;
+    background-color: turquoise;
+    border-radius: var(--borderRadius);
+    margin-top: 4rem;
+    margin-left: 7rem ;
+}
+#editor_de_codigo {
+    display: flex;
+    flex-direction: column;
+    background-color:#141414;
+    width: 68.8rem;
+    height: 30.2rem;
+    margin: 3.2rem;
+    border-radius: 0.8rem;
+}
+#editor_de_codigo textarea {
+    width: 65.6rem;
+    height: 23.4rem;
+    background-color: #141414;
+    color: var(--white);
+    font-style: 'Roboto Mono', monospace;
+    font-size: 1.4rem;
+    line-height: 18.46px;
+    border: none;
+    margin: 0 1.6rem 1.6rem; 
+}
+
+#bolinhasEditor {
+    margin: 1.6rem 0 2.4rem 1.6rem;
+}
+#highlightButton{
+    width: 75.2rem;
+    height: 5.6rem;
+    color: var(--white);
+    font-family: var(--inter);
+    text-align: center;
+    background-color: rgba(193, 202, 224, 0.08);
+    border-radius: var(--borderRadius);
+    border: none;
+    margin-top: 3.2rem;
+}
+#caracteristicasProjeto{
+    margin-left: 3rem;
+    margin-top: 5.7rem;
+}
+
+@media(max-width: 320px) {
+    nav p,.menu, #campo_de_busca, #autor{
+        display: none;
+    }
+    #menu{
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        background-image: url(../images/hamburgerMenu.svg);
+        background-repeat: no-repeat;
+        margin-right: 2rem;
+        margin-top: -4rem;
+    }
+    header{
+        background-image: url(../images/Vector.svg);
+        background-repeat: no-repeat;
+        background-position: 76%  30%;
+    }
+
+    #logo{
+        margin-left: 0.5rem;
+        margin-top: 1rem;
+    }
+
+    #container{
+        display: flex;
+        flex-direction: column;
+        margin-left: 0.1rem;
+        margin-right: 0.1rem;
+    }
+
+    main{
+        margin-left: 12px;
+        margin-top: 0.5rem;
+        width: 290px;
+        height: 492px;
+    }
+
+    #editor_de_codigo{
+        width: 260px;
+        height: 452px;
+        margin: 2rem 1.5rem 2rem;
+    }
+
+    textarea{
+        width: 20px;
+        max-width: 170px;
+        height: 360px;
+        max-height: 400px;
+        resize: vertical;
+    }
+
+    #highlightButton{
+        width: 29rem;
+        height: 5.6rem;
+    }
+    
+    #caracteristicasProjeto{
+        margin-left: 1.8rem;
+        margin-top: 12rem;
+    }
+
+    .projeto_campos{
+        width: 28rem;
+    }
+
+    .cor_do_editor{
+        width: 28rem;
+    }
+}
+@media(max-width: 375px){
+    nav p,.menu, #campo_de_busca, #autor{
+        display: none;
+    }
+    #menu{
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        background-image: url(../images/hamburgerMenu.svg);
+        background-repeat: no-repeat;
+        margin-right: 2rem;
+        margin-top: -4rem;
+    }
+    header{
+        background-image: url(../images/Vector.svg);
+        background-repeat: no-repeat;
+        background-position: 76%  30%;
+    }
+
+    #logo{
+        margin-left: 0.5rem;
+        margin-top: 1rem;
+    }
+
+    #container{
+        display: flex;
+        flex-direction: column;
+        margin-left: 0.1rem;
+        margin-right: 0.1rem;
+    }
+
+    main{
+        margin-left: 12px;
+        margin-top: 0.5rem;
+        width: 343px;
+        height: 492px;
+    }
+
+    #editor_de_codigo{
+        width: 312px;
+        height: 452px;
+        margin: 2rem 1.5rem 2rem;
+    }
+
+    textarea{
+        width: 20px;
+        max-width: 170px;
+        height: 360px;
+        max-height: 400px;
+        resize: vertical;
+    }
+
+    #highlightButton{
+        width: 34rem;
+        height: 5.6rem;
+    }
+    
+    #caracteristicasProjeto{
+        margin-left: 1.8rem;
+        margin-top: 12rem;
+    }
+
+    .projeto_campos{
+        width: 33.5rem;
+    }
+
+    .cor_do_editor{
+        width: 33.5rem;
+    }
+}
+@media(max-width: 425px){
+    nav p,.menu, #campo_de_busca, #autor{
+        display: none;
+    }
+    #menu{
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        background-image: url(../images/hamburgerMenu.svg);
+        background-repeat: no-repeat;
+        margin-right: 2rem;
+        margin-top: -4rem;
+    }
+    header{
+        background-image: url(../images/Vector.svg);
+        background-repeat: no-repeat;
+        background-position: 76%  30%;
+    }
+
+    #logo{
+        margin-left: 0.5rem;
+        margin-top: 1rem;
+    }
+
+    #container{
+        display: flex;
+        flex-direction: column;
+        margin-left: 0.1rem;
+        margin-right: 0.1rem;
+    }
+
+    main{
+        margin-left: 12px;
+        margin-top: 0.5rem;
+        width: 390px;
+        height: 492px;
+    }
+
+    #editor_de_codigo{
+        width: 360px;
+        height: 452px;
+        margin: 2rem 1.5rem 2rem;
+    }
+
+    textarea{
+        width: 20px;
+        max-width: 330px;
+        height: 360px;
+        max-height: 400px;
+        resize: vertical;
+    }
+
+    #highlightButton{
+        width: 39rem;
+        height: 5.6rem;
+    }
+    
+    #caracteristicasProjeto{
+        margin-left: 1.8rem;
+        margin-top: 12rem;
+    }
+
+    .projeto_campos{
+        width: 38.5rem;
+    }
+
+    .cor_do_editor{
+        width: 38.5rem;
+    } 
+}
